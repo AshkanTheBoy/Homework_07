@@ -5,6 +5,7 @@ public class Task6_34 {
 
  */
     public static void main(String[] args) {
+        //прогоняем каждое число и увеличиваем счетчик при совпадении
         int count = 0;
         int number = 100;
         while (count<15) {
@@ -17,6 +18,7 @@ public class Task6_34 {
 
         System.out.println("__________________");
 
+        //прогоняем до первого совпадения, затем увеличиваем на 15 numbersLeft-1 раз
         number = 100;
         int numbersLeft = 15;
         System.out.printf("Numbers left: %d", numbersLeft);

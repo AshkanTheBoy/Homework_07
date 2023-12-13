@@ -13,23 +13,24 @@ public class Task5_86 {
  */
     public static void main(String[] args) {
         int n = 1;
-        int sumOfNumbers;
-        int numberToPow = 10;
+        int square;
+        int numberToPow = 3;
         int sumOfSquares = 0;
         int number = numberToPow;
 
+        //цикл диапазона
         for (int j = 0; j < number; j++) {
-            System.out.println(numberToPow+"^2");
-            sumOfNumbers = 0;
+            System.out.println((j+1)+"^2");
+            square = 0;
 
-            for (int i = 0; i < numberToPow; i++) {
+            //цикл конкретного числа
+            for (int i = 0; i < j+1; i++) {
                 System.out.print((2*(n+i)-1)+" ");
-                sumOfNumbers+= 2*(n+i)-1;
+                square+= 2*(n+i)-1;
             }
 
-            int square = sumOfNumbers;
             sumOfSquares+= square;
-            System.out.printf("%d | The sum is: %d",square, sumOfSquares);
+            System.out.printf("| %d | The sum is: %d",square, sumOfSquares);
             System.out.println();
             numberToPow--;
         }

@@ -16,7 +16,7 @@ public class Task6_34 {
         }
 
         System.out.println("__________________");
-        
+
         number = 100;
         int numbersLeft = 15;
         System.out.printf("Numbers left: %d", numbersLeft);
